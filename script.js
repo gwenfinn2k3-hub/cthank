@@ -119,15 +119,15 @@
         animEls,
         {
           opacity: 0,
-          y: direction >= 0 ? 35 : -35,
-          scale: 0.98
+          y: 24,
+          scale: 0.99
         },
         {
           opacity: 1,
           y: 0,
           scale: 1,
-          duration: 0.75,
-          stagger: 0.08,
+          duration: 0.65,
+          stagger: 0.07,
           clearProps: 'transform,scale'
         },
         0.05
@@ -140,14 +140,14 @@
         mediaEl,
         {
           opacity: 0,
-          scale: 1.08,
-          x: direction >= 0 ? 30 : -30
+          scale: 1.04,
+          x: direction >= 0 ? 25 : -25
         },
         {
           opacity: 1,
           scale: 1,
           x: 0,
-          duration: 1,
+          duration: 0.85,
           ease: 'power2.out',
           clearProps: 'transform'
         },
@@ -262,8 +262,9 @@
     isAnimating = true;
 
     if (hasGSAP) {
-      // 3D Perspective Flip / Slide Transition
+      // Chuẩn Apple Keynote: Chuyển cảnh ngang mượt mà, chiều sâu 3D tinh tế không lag
       const tl = gsap.timeline({
+        defaults: { ease: 'power3.out' },
         onComplete: () => {
           currentSlide.classList.remove('is-active');
           nextSlide.classList.add('is-active');
@@ -275,39 +276,36 @@
         }
       });
 
-      // Outgoing slide
+      // Slide cũ: Trượt nhẹ sang bên ngược lại, scale nhẹ lùi về sau và mờ dần
       tl.to(
         currentSlide,
         {
-          opacity: 0,
-          y: direction * -50,
+          xPercent: direction * -35,
           scale: 0.94,
-          filter: 'blur(6px)',
-          duration: 0.55,
+          opacity: 0,
+          duration: 0.6,
           ease: 'power2.inOut'
         },
         0
       );
 
-      // Incoming slide
+      // Slide mới: Tiến vào từ hướng di chuyển, xuất hiện thanh thoát
       tl.fromTo(
         nextSlide,
         {
-          opacity: 0,
-          y: direction * 50,
-          scale: 1.05,
-          filter: 'blur(6px)',
-          visibility: 'visible'
+          visibility: 'visible',
+          xPercent: direction * 45,
+          scale: 0.98,
+          opacity: 0
         },
         {
-          opacity: 1,
-          y: 0,
+          xPercent: 0,
           scale: 1,
-          filter: 'blur(0px)',
+          opacity: 1,
           duration: 0.65,
           ease: 'power3.out'
         },
-        0.18
+        0.12
       );
     } else {
       currentSlide.classList.remove('is-active');
