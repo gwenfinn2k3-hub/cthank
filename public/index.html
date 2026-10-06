@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Bài 1: Bảo vệ chủ quyền lãnh thổ, biên giới quốc gia Việt Nam | GDQP&amp;AN</title>
+  <meta name="description" content="Bài giảng tương tác môn Giáo dục Quốc phòng và An ninh – Bài 1: Bảo vệ chủ quyền lãnh thổ, biên giới quốc gia Việt Nam. Mục tiêu, quan điểm, Luật Biên giới quốc gia, UNCLOS 1982, Luật Biển Việt Nam và trách nhiệm của công dân, học sinh.">
+  <meta name="keywords" content="GDQP, Giáo dục quốc phòng an ninh, chủ quyền lãnh thổ, biên giới quốc gia, Luật Biển Việt Nam, UNCLOS 1982, Hoàng Sa, Trường Sa">
+  <meta name="author" content="GDQP&amp;AN – Bài giảng tương tác">
+  <meta name="theme-color" content="#070B14">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bài 1: Bảo vệ chủ quyền lãnh thổ, biên giới quốc gia Việt Nam">
+  <meta property="og:description" content="Bài giảng trình chiếu tương tác – Tinh thần bảo vệ chủ quyền thiêng liêng và toàn vẹn lãnh thổ.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20'%3E%3Crect width='30' height='20' rx='2' fill='%23DA251D'/%3E%3Cpath d='M15,4 L16.347,8.146 L20.706,8.146 L17.18,10.708 L18.527,14.854 L15,12.292 L11.473,14.854 L12.82,10.708 L9.294,8.146 L13.653,8.146 Z' fill='%23FFCD02'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Be Vietnam Pro (tiêu đề) + Inter (nội dung) – hỗ trợ đầy đủ tiếng Việt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="red">
+
+  <!-- ================= NỀN ĐỘNG ================= -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__base"></div>
+    <div class="bg__theme bg__theme--red"></div>
+    <div class="bg__theme bg__theme--blue"></div>
+    <div class="bg__theme bg__theme--gold"></div>
+    <div class="bg__grid"></div>
+    <canvas class="bg__particles" id="particles"></canvas>
+    <div class="bg__vignette"></div>
+    <div class="bg__noise"></div>
+  </div>
+
+  <!-- ================= THANH TIẾN TRÌNH ================= -->
+  <div class="progress" id="progress" role="progressbar" aria-label="Tiến trình bài giảng" aria-valuemin="1" aria-valuemax="14" aria-valuenow="1">
+    <div class="progress__bar" id="progress-bar"></div>
+  </div>
+
+  <!-- ================= THANH TRÊN ================= -->
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#/1" id="brand-home" aria-label="Về slide tiêu đề">
+      <span class="brand__logo">
+        <svg viewBox="0 0 30 20" aria-hidden="true">
+          <rect width="30" height="20" fill="#DA251D"/>
+          <path d="M15,4 L16.347,8.146 L20.706,8.146 L17.18,10.708 L18.527,14.854 L15,12.292 L11.473,14.854 L12.82,10.708 L9.294,8.146 L13.653,8.146 Z" fill="#FFCD02"/>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <strong>GDQP&amp;AN · Bài 1</strong>
+        <small>Chủ quyền lãnh thổ &amp; Biên giới quốc gia</small>
+      </span>
+    </a>
+
+    <div class="topbar__actions">
+      <div class="counter" aria-live="off">
+        <span class="counter__window"><span class="counter__current" id="counter-current">01</span></span>
+        <span class="counter__sep">/</span>
+        <span class="counter__total" id="counter-total">14</span>
+      </div>
+      <button class="icon-btn" id="btn-overview" type="button" aria-label="Mở mục lục (phím O)" title="Mục lục (O)">
+        <i class="fa-solid fa-table-cells-large"></i>
+      </button>
+      <button class="icon-btn" id="btn-fullscreen" type="button" aria-label="Bật/tắt toàn màn hình (phím F)" title="Toàn màn hình (F)">
+        <i class="fa-solid fa-expand"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= BỘ SLIDE ================= -->
+  <main class="deck" id="deck" aria-roledescription="carousel" aria-label="Bài giảng: Bảo vệ chủ quyền lãnh thổ, biên giới quốc gia Việt Nam">
+
+    <!-- ========== SLIDE 01: TIÊU ĐỀ ========== -->
+    <section class="slide slide--hero is-active" id="slide-1" data-title="Tiêu đề bài giảng" data-icon="fa-star" data-theme="red" aria-roledescription="slide" aria-label="Slide 1 trên 14: Tiêu đề">
+      <span class="slide__index" aria-hidden="true">01</span>
+      <div class="slide__inner grid-2">
+        <div class="slide__content">
+          <span class="eyebrow" data-anim><i class="fa-solid fa-shield-halved"></i>Giáo dục Quốc phòng và An ninh</span>
+          <p class="hero__kicker" data-anim><span class="hero__kicker-line"></span>Bài 1</p>
+          <h1 class="hero__title" data-anim>Bảo vệ chủ quyền lãnh thổ, <span class="text-gradient">biên giới quốc gia</span> Việt Nam</h1>
+          <p class="lead" data-anim>Môn Giáo dục Quốc phòng và An ninh <span class="sep">|</span> Tinh thần bảo vệ chủ quyền thiêng liêng và toàn vẹn lãnh thổ.</p>
+          <div class="hero__actions" data-anim>
+            <button class="btn btn--primary" id="btn-start" type="button">
+              <span>Bắt đầu bài giảng</span><i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button class="btn btn--ghost" id="btn-open-overview" type="button">
+              <i class="fa-solid fa-list-ul"></i><span>Mục lục</span>
+            </button>
+          </div>
+          <ul class="hero__stats" data-anim>
+            <li><strong>14</strong><span>Nội dung trọng tâm</span></li>
+            <li><strong>3.260</strong><span>Km bờ biển</span></li>
+            <li><strong>1982</strong><span>Công ước UNCLOS</span></li>
+          </ul>
+        </div>
+
+        <figure class="media media--hero" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-water"></i></span>
+          <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1400&q=80" alt="Vịnh biển Việt Nam với những đảo đá vôi hùng vĩ" decoding="async">
+          <div class="flag-card glass">
+            <span class="flag-wrap">
+              <svg class="flag" viewBox="0 0 30 20" aria-hidden="true">
+                <rect width="30" height="20" fill="#DA251D"/>
+                <path d="M15,4 L16.347,8.146 L20.706,8.146 L17.18,10.708 L18.527,14.854 L15,12.292 L11.473,14.854 L12.82,10.708 L9.294,8.146 L13.653,8.146 Z" fill="#FFCD02"/>
+              </svg>
+            </span>
+            <span class="flag-card__text"><strong>Tổ quốc trên hết</strong><small>Độc lập · Chủ quyền · Toàn vẹn</small></span>
+          </div>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Biển đảo Việt Nam – Máu thịt thiêng liêng của Tổ quốc</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 02: MỤC TIÊU BẢO VỆ TỔ QUỐC ========== -->
+    <section class="slide" id="slide-2" data-title="Mục tiêu bảo vệ Tổ quốc" data-icon="fa-bullseye" data-theme="red" aria-roledescription="slide" aria-label="Slide 2 trên 14: Mục tiêu bảo vệ Tổ quốc">
+      <span class="slide__index" aria-hidden="true">02</span>
+      <div class="slide__inner grid-2">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-bullseye"></i>Phần I · Bảo vệ Tổ quốc</span>
+            <h2 class="slide__title" data-anim>Mục tiêu <span class="hl">bảo vệ Tổ quốc</span></h2>
+            <p class="lead" data-anim>Bảo vệ vững chắc Tổ quốc Việt Nam xã hội chủ nghĩa – nhiệm vụ trọng yếu, thường xuyên của toàn Đảng, toàn dân và toàn quân.</p>
+          </header>
+          <div class="cards cards--2">
+            <article class="card glass spot" data-anim>
+              <div class="card__icon"><i class="fa-solid fa-flag"></i></div>
+              <div class="card__body">
+                <span class="card__num">01</span>
+                <h3 class="card__title">Độc lập – Chủ quyền</h3>
+                <p>Độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ.</p>
+              </div>
+            </article>
+            <article class="card glass spot" data-anim>
+              <div class="card__icon card__icon--gold"><i class="fa-solid fa-landmark"></i></div>
+              <div class="card__body">
+                <span class="card__num">02</span>
+                <h3 class="card__title">Chế độ chính trị</h3>
+                <p>Đảng, Nhà nước, nhân dân và chế độ xã hội chủ nghĩa.</p>
+              </div>
+            </article>
+            <article class="card glass spot" data-anim>
+              <div class="card__icon card__icon--blue"><i class="fa-solid fa-dove"></i></div>
+              <div class="card__body">
+                <span class="card__num">03</span>
+                <h3 class="card__title">Hòa bình – An ninh</h3>
+                <p>Hòa bình, ổn định, an ninh quốc gia và an ninh con người.</p>
+              </div>
+            </article>
+            <article class="card glass spot" data-anim>
+              <div class="card__icon card__icon--green"><i class="fa-solid fa-seedling"></i></div>
+              <div class="card__body">
+                <span class="card__num">04</span>
+                <h3 class="card__title">Trật tự xã hội</h3>
+                <p>Trật tự xã hội an toàn, lành mạnh để phát triển bền vững.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-mountain-sun"></i></span>
+          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1400&q=80" alt="Núi rừng mờ sương hùng vĩ" decoding="async">
+          <span class="media__badge"><i class="fa-solid fa-star"></i>4 mục tiêu cốt lõi</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Non sông gấm vóc – Mục tiêu bảo vệ trường tồn</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 03: QUAN ĐIỂM BẢO VỆ TỔ QUỐC ========== -->
+    <section class="slide" id="slide-3" data-title="Quan điểm bảo vệ Tổ quốc" data-icon="fa-compass" data-theme="gold" aria-roledescription="slide" aria-label="Slide 3 trên 14: Quan điểm bảo vệ Tổ quốc">
+      <span class="slide__index" aria-hidden="true">03</span>
+      <div class="slide__inner grid-2 grid-2--reverse grid-2--wide-r">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-compass"></i>Phần I · Bảo vệ Tổ quốc</span>
+            <h2 class="slide__title" data-anim>Quan điểm <span class="hl">bảo vệ Tổ quốc</span></h2>
+            <p class="lead" data-anim>Sáu quan điểm then chốt định hướng sự nghiệp bảo vệ Tổ quốc trong tình hình mới.</p>
+          </header>
+          <div class="cards cards--2 cards--compact">
+            <article class="card glass spot" data-anim>
+              <div class="card__icon"><i class="fa-solid fa-star"></i></div>
+              <div class="card__body"><span class="card__num">01</span>
+                <p>Giữ vững sự lãnh đạo <strong>tuyệt đối, trực tiếp</strong> của Đảng.</p></div>
+            </article>
+            <article class="card glass spot" data-anim>
+              <div class="card__icon card__icon--gold"><i class="fa-solid fa-flag"></i></div>
+              <div class="card__body"><span class="card__num">02</span>
+                <p>Kiên định <strong>độc lập dân tộc</strong> gắn liền với CNXH.</p></div>
+            </article>
+            <article class="card glass spot" data-anim>
+              <div class="card__icon card__icon--blue"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="card__body"><span class="card__num">03</span>
+                <p>Kết hợp chặt chẽ giữa <strong>xây dựng</strong> và <strong>bảo vệ</strong> Tổ quốc.</p></div>
+            </article>
+            <article class="card glass spot" data-anim>
+              <div class="card__icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="card__body"><span class="card__num">04</span>
+                <p>Phát huy sức mạnh <strong>đại đoàn kết toàn dân tộc</strong> với sức mạnh thời đại.</p></div>
+            </article>
+            <article class="card glass spot" data-anim>
+              <div class="card__icon card__icon--gold"><i class="fa-solid fa-handshake-angle"></i></div>
+              <div class="card__body"><span class="card__num">05</span>
+                <p>Kết hợp tối đa <strong>nội lực</strong> với <strong>hợp tác quốc tế</strong>.</p></div>
+            </article>
+            <article class="card glass spot" data-anim>
+              <div class="card__icon card__icon--blue"><i class="fa-solid fa-earth-asia"></i></div>
+              <div class="card__body"><span class="card__num">06</span>
+                <p>Đối ngoại <strong>độc lập, tự chủ</strong>, đa phương hóa, đa dạng hóa.</p></div>
+            </article>
+          </div>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-compass"></i></span>
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80" alt="Những đỉnh núi vươn cao trên biển mây" decoding="async">
+          <span class="media__badge"><i class="fa-solid fa-star"></i>6 quan điểm then chốt</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Vững như núi – Kiên định đường lối bảo vệ Tổ quốc</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 04: ĐỐI TÁC VÀ ĐỐI TƯỢNG ========== -->
+    <section class="slide" id="slide-4" data-title="Đối tác và đối tượng" data-icon="fa-scale-balanced" data-theme="blue" aria-roledescription="slide" aria-label="Slide 4 trên 14: Đối tác và đối tượng">
+      <span class="slide__index" aria-hidden="true">04</span>
+      <div class="slide__inner grid-2 grid-2--wide">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-scale-balanced"></i>Phần I · Bảo vệ Tổ quốc</span>
+            <h2 class="slide__title" data-anim>Đối tác <span class="hl">&amp;</span> Đối tượng</h2>
+            <p class="lead" data-anim>Nhận diện đúng để vừa hợp tác, vừa đấu tranh – linh hoạt, chủ động, kiên định nguyên tắc.</p>
+          </header>
+
+          <div class="vs">
+            <article class="vs__side vs__side--ally glass spot" data-anim="left">
+              <header class="vs__head">
+                <span class="vs__icon"><i class="fa-solid fa-handshake"></i></span>
+                <div><small>Hợp tác</small><h3>Đối tác</h3></div>
+              </header>
+              <ul class="check-list">
+                <li><i class="fa-solid fa-circle-check"></i><span>Các quốc gia, lực lượng <strong>tôn trọng độc lập, chủ quyền</strong>, thống nhất và toàn vẹn lãnh thổ Việt Nam.</span></li>
+                <li><i class="fa-solid fa-circle-check"></i><span>Thiết lập, mở rộng quan hệ hữu nghị, <strong>hợp tác bình đẳng, cùng có lợi</strong>.</span></li>
+              </ul>
+              <div class="tags"><span>Tôn trọng</span><span>Bình đẳng</span><span>Cùng có lợi</span></div>
+            </article>
+
+            <div class="vs__badge" data-anim="pop" aria-hidden="true">VS</div>
+
+            <article class="vs__side vs__side--threat glass spot" data-anim="right">
+              <header class="vs__head">
+                <span class="vs__icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                <div><small>Cảnh giác</small><h3>Đối tượng</h3></div>
+              </header>
+              <ul class="check-list">
+                <li><i class="fa-solid fa-circle-exclamation"></i><span><strong>Mọi thế lực</strong> có âm mưu, hành động <strong>phá hoại mục tiêu</strong> xây dựng và bảo vệ Tổ quốc.</span></li>
+                <li><i class="fa-solid fa-circle-exclamation"></i><span>Chủ động phát hiện, đấu tranh, làm thất bại mọi âm mưu chống phá.</span></li>
+              </ul>
+              <div class="tags"><span>Cảnh giác</span><span>Đấu tranh</span><span>Ngăn chặn</span></div>
+            </article>
+          </div>
+
+          <p class="note glass" data-anim><i class="fa-solid fa-circle-info"></i><span><strong>Quan điểm biện chứng:</strong> trong mỗi đối tượng vẫn có thể có mặt cần tranh thủ, hợp tác; trong đối tác có thể có mặt khác biệt cần đấu tranh.</span></p>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-handshake"></i></span>
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80" alt="Cái bắt tay hợp tác" decoding="async">
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Hợp tác bình đẳng – Đấu tranh kiên quyết</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 05: CHỦ QUYỀN LÃNH THỔ ========== -->
+    <section class="slide" id="slide-5" data-title="Chủ quyền lãnh thổ" data-icon="fa-map-location-dot" data-theme="red" aria-roledescription="slide" aria-label="Slide 5 trên 14: Chủ quyền lãnh thổ">
+      <span class="slide__index" aria-hidden="true">05</span>
+      <div class="slide__inner grid-2">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-map-location-dot"></i>Phần II · Chủ quyền lãnh thổ</span>
+            <h2 class="slide__title" data-anim>Chủ quyền <span class="hl">lãnh thổ</span></h2>
+            <p class="lead" data-anim>Việt Nam là quốc gia <strong>độc lập, có chủ quyền, thống nhất và toàn vẹn lãnh thổ</strong>.</p>
+          </header>
+
+          <div class="terr-wrap">
+            <div class="territory" data-anim="pop">
+              <div class="territory__grid" role="tablist" aria-label="Các thành phần lãnh thổ">
+                <button class="terr-tab is-active" id="terr-land" type="button" role="tab" aria-selected="true" aria-controls="terr-panel" data-key="land">
+                  <span class="terr-tab__icon"><i class="fa-solid fa-mountain-sun"></i></span><span>Đất liền</span>
+                </button>
+                <button class="terr-tab" id="terr-island" type="button" role="tab" aria-selected="false" aria-controls="terr-panel" data-key="island">
+                  <span class="terr-tab__icon"><i class="fa-solid fa-umbrella-beach"></i></span><span>Hải đảo</span>
+                </button>
+                <button class="terr-tab" id="terr-sea" type="button" role="tab" aria-selected="false" aria-controls="terr-panel" data-key="sea">
+                  <span class="terr-tab__icon"><i class="fa-solid fa-water"></i></span><span>Vùng biển</span>
+                </button>
+                <button class="terr-tab" id="terr-sky" type="button" role="tab" aria-selected="false" aria-controls="terr-panel" data-key="sky">
+                  <span class="terr-tab__icon"><i class="fa-solid fa-cloud"></i></span><span>Vùng trời</span>
+                </button>
+              </div>
+              <div class="territory__core" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+            </div>
+
+            <div class="terr-details glass" id="terr-panel" role="tabpanel" aria-live="polite" data-anim>
+              <div class="terr-detail is-active" data-key="land">
+                <h3><i class="fa-solid fa-mountain-sun"></i>Đất liền</h3>
+                <p>Phần lãnh thổ lục địa, giới hạn bởi đường biên giới quốc gia trên đất liền với Trung Quốc, Lào và Campuchia.</p>
+              </div>
+              <div class="terr-detail" data-key="island">
+                <h3><i class="fa-solid fa-umbrella-beach"></i>Hải đảo</h3>
+                <p>Hơn 3.000 đảo lớn nhỏ, trong đó có hai quần đảo <strong>Hoàng Sa</strong> và <strong>Trường Sa</strong>.</p>
+              </div>
+              <div class="terr-detail" data-key="sea">
+                <h3><i class="fa-solid fa-water"></i>Vùng biển</h3>
+                <p>Nội thủy, lãnh hải, vùng tiếp giáp lãnh hải, vùng đặc quyền kinh tế và thềm lục địa.</p>
+              </div>
+              <div class="terr-detail" data-key="sky">
+                <h3><i class="fa-solid fa-cloud"></i>Vùng trời</h3>
+                <p>Khoảng không gian phía trên lãnh thổ đất liền, nội thủy, lãnh hải và các đảo, quần đảo.</p>
+              </div>
+              <span class="terr-details__hint"><i class="fa-solid fa-hand-pointer"></i>Chọn từng thành phần để xem chi tiết</span>
+            </div>
+          </div>
+
+          <p class="emphasis" data-anim><i class="fa-solid fa-shield-halved"></i><span>“Chủ quyền lãnh thổ là thiêng liêng, bất khả xâm phạm.”</span></p>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-map-location-dot"></i></span>
+          <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1400&q=80" alt="Bản đồ địa lý" decoding="async">
+          <span class="media__badge"><i class="fa-solid fa-layer-group"></i>4 thành phần lãnh thổ</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Đất liền · Hải đảo · Vùng biển · Vùng trời</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 06: BIÊN GIỚI QUỐC GIA ========== -->
+    <section class="slide" id="slide-6" data-title="Biên giới quốc gia" data-icon="fa-route" data-theme="blue" aria-roledescription="slide" aria-label="Slide 6 trên 14: Biên giới quốc gia">
+      <span class="slide__index" aria-hidden="true">06</span>
+      <div class="slide__inner grid-2 grid-2--reverse">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-route"></i>Phần III · Biên giới quốc gia</span>
+            <h2 class="slide__title" data-anim>Biên giới <span class="hl">quốc gia</span></h2>
+          </header>
+
+          <div class="definition glass" data-anim>
+            <span class="definition__label"><i class="fa-solid fa-book"></i>Định nghĩa</span>
+            <p>Là <strong>đường và mặt thẳng đứng</strong> theo đường đó để xác định ranh giới lãnh thổ đất liền, các đảo, quần đảo (trong đó có Hoàng Sa, Trường Sa), vùng biển, lòng đất, vùng trời của Việt Nam.</p>
+            <cite>— Luật Biên giới quốc gia năm 2003</cite>
+          </div>
+
+          <div class="types">
+            <div class="type glass spot" data-anim>
+              <span class="type__icon"><i class="fa-solid fa-mountain"></i></span>
+              <h3>Trên đất liền</h3><small>Hoạch định &amp; cắm mốc</small>
+            </div>
+            <div class="type glass spot" data-anim>
+              <span class="type__icon"><i class="fa-solid fa-water"></i></span>
+              <h3>Trên biển</h3><small>Ranh giới ngoài lãnh hải</small>
+            </div>
+            <div class="type glass spot" data-anim>
+              <span class="type__icon"><i class="fa-solid fa-layer-group"></i></span>
+              <h3>Trong lòng đất</h3><small>Mặt thẳng đứng xuống lòng đất</small>
+            </div>
+            <div class="type glass spot" data-anim>
+              <span class="type__icon"><i class="fa-solid fa-jet-fighter"></i></span>
+              <h3>Trên không</h3><small>Mặt thẳng đứng lên vùng trời</small>
+            </div>
+          </div>
+
+          <div class="callout" data-anim>
+            <span class="callout__icon"><i class="fa-solid fa-location-dot"></i></span>
+            <p><strong>Ghi chú đặc biệt:</strong> Biên giới quốc gia trên đất liền được hoạch định, phân giới và <strong>cắm mốc quốc giới trên thực địa</strong>.</p>
+          </div>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-mountain"></i></span>
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80" alt="Dãy núi biên cương hùng vĩ" decoding="async">
+          <span class="media__badge"><i class="fa-solid fa-scale-balanced"></i>Luật Biên giới quốc gia 2003</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Đường biên cương – Ranh giới thiêng liêng của Tổ quốc</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 07: KHU VỰC BIÊN GIỚI ========== -->
+    <section class="slide" id="slide-7" data-title="Khu vực biên giới" data-icon="fa-map" data-theme="blue" aria-roledescription="slide" aria-label="Slide 7 trên 14: Khu vực biên giới">
+      <span class="slide__index" aria-hidden="true">07</span>
+      <div class="slide__inner grid-2">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-map"></i>Phần III · Biên giới quốc gia</span>
+            <h2 class="slide__title" data-anim>Khu vực <span class="hl">biên giới</span></h2>
+            <p class="lead" data-anim>Ba phân vùng – một “phên dậu” vững chắc bảo vệ Tổ quốc từ xa.</p>
+          </header>
+
+          <div class="zones">
+            <article class="zone glass spot" data-anim>
+              <span class="zone__icon"><i class="fa-solid fa-tree-city"></i></span>
+              <div class="zone__body">
+                <span class="zone__tag">Đất liền</span>
+                <p>Các <strong>xã, phường, thị trấn</strong> có một phần địa giới hành chính trùng hợp với biên giới quốc gia trên đất liền.</p>
+              </div>
+              <span class="zone__metric"><i class="fa-solid fa-map-pin"></i></span>
+            </article>
+            <article class="zone glass spot zone--sea" data-anim>
+              <span class="zone__icon"><i class="fa-solid fa-anchor"></i></span>
+              <div class="zone__body">
+                <span class="zone__tag">Trên biển</span>
+                <p>Vùng tính từ biên giới quốc gia trên biển vào đến <strong>hết địa giới hành chính</strong> các xã, phường, thị trấn giáp biển và đảo, quần đảo.</p>
+              </div>
+              <span class="zone__metric"><i class="fa-solid fa-ship"></i></span>
+            </article>
+            <article class="zone glass spot zone--sky" data-anim>
+              <span class="zone__icon"><i class="fa-solid fa-plane"></i></span>
+              <div class="zone__body">
+                <span class="zone__tag">Trên không</span>
+                <p>Phần không gian dọc theo biên giới quốc gia, có <strong>chiều rộng 10 km</strong> tính từ biên giới trở vào.</p>
+              </div>
+              <span class="zone__metric zone__metric--num"><strong>10</strong><small>km</small></span>
+            </article>
+          </div>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-map"></i></span>
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80" alt="Cảnh núi non và mặt nước nơi biên cương" decoding="async">
+          <span class="media__badge"><i class="fa-solid fa-map"></i>3 phân vùng</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Khu vực biên giới – Phên dậu của Tổ quốc</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 08: CÁC HÀNH VI BỊ NGHIÊM CẤM ========== -->
+    <section class="slide slide--danger" id="slide-8" data-title="Các hành vi bị nghiêm cấm" data-icon="fa-ban" data-theme="red" aria-roledescription="slide" aria-label="Slide 8 trên 14: Các hành vi bị nghiêm cấm">
+      <span class="slide__index" aria-hidden="true">08</span>
+      <div class="slide__inner grid-2 grid-2--reverse grid-2--wide-r">
+        <div class="slide__content">
+          <header class="slide__head">
+            <div class="hazard-tape" data-anim aria-hidden="true"><span>Nghiêm cấm · Nghiêm cấm · Nghiêm cấm · Nghiêm cấm · Nghiêm cấm · Nghiêm cấm · Nghiêm cấm · Nghiêm cấm ·</span></div>
+            <h2 class="slide__title" data-anim>Các hành vi <span class="hl hl--red">bị nghiêm cấm</span></h2>
+          </header>
+
+          <div class="cards cards--2 cards--compact">
+            <article class="card danger-card spot" data-anim>
+              <div class="danger-card__icon"><i class="fa-solid fa-monument"></i></div>
+              <div class="card__body"><span class="card__num">01</span>
+                <p>Phá hoại, xê dịch, làm sai lệch <strong>mốc quốc giới</strong>.</p></div>
+            </article>
+            <article class="card danger-card spot" data-anim>
+              <div class="danger-card__icon"><i class="fa-solid fa-house-chimney-crack"></i></div>
+              <div class="card__body"><span class="card__num">02</span>
+                <p><strong>Xâm canh, xâm cư</strong>; phá hủy các công trình biên giới.</p></div>
+            </article>
+            <article class="card danger-card spot" data-anim>
+              <div class="danger-card__icon"><i class="fa-solid fa-smog"></i></div>
+              <div class="card__body"><span class="card__num">03</span>
+                <p>Gây ô nhiễm môi trường, khai thác <strong>hủy hoại tài nguyên</strong> biên cương.</p></div>
+            </article>
+            <article class="card danger-card spot" data-anim>
+              <div class="danger-card__icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+              <div class="card__body"><span class="card__num">04</span>
+                <p><strong>Vượt biên trái phép</strong>, buôn lậu, vận chuyển hàng cấm qua biên giới.</p></div>
+            </article>
+            <article class="card danger-card spot" data-anim>
+              <div class="danger-card__icon"><i class="fa-solid fa-plane-slash"></i></div>
+              <div class="card__body"><span class="card__num">05</span>
+                <p>Vi phạm <strong>an toàn bay</strong> và an ninh trật tự biên giới.</p></div>
+            </article>
+            <article class="card danger-card spot" data-anim>
+              <div class="danger-card__icon"><i class="fa-solid fa-gavel"></i></div>
+              <div class="card__body"><span class="card__num">06</span>
+                <p>Các hành vi khác vi phạm nghiêm trọng <strong>Luật Biên giới quốc gia</strong>.</p></div>
+            </article>
+          </div>
+        </div>
+
+        <figure class="media media--danger" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-ban"></i></span>
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=80" alt="Núi non biên cương dưới bầu trời đêm" decoding="async">
+          <span class="media__badge media__badge--red"><i class="fa-solid fa-triangle-exclamation"></i>6 nhóm hành vi</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Giữ bình yên nơi biên cương – Xử lý nghiêm mọi vi phạm</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 09: UNCLOS 1982 ========== -->
+    <section class="slide" id="slide-9" data-title="Công ước Luật Biển 1982" data-icon="fa-earth-asia" data-theme="blue" aria-roledescription="slide" aria-label="Slide 9 trên 14: Công ước Liên Hợp Quốc về Luật Biển 1982">
+      <span class="slide__index" aria-hidden="true">09</span>
+      <div class="slide__inner grid-2">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-earth-asia"></i>Phần IV · Pháp lý quốc tế</span>
+            <h2 class="slide__title" data-anim>Công ước LHQ về Luật Biển <span class="hl">1982</span></h2>
+            <p class="lead" data-anim>UNCLOS 1982 – United Nations Convention on the Law of the Sea.</p>
+          </header>
+
+          <div class="timeline">
+            <span class="timeline__line" data-anim="lineX" aria-hidden="true"></span>
+            <ol class="timeline__list">
+              <li class="milestone" data-anim>
+                <span class="milestone__dot"><i class="fa-solid fa-pen-nib"></i></span>
+                <time datetime="1982-12-10">10/12/1982</time>
+                <p>Chính thức công bố, mở ký kết tại Montego Bay (Jamaica).</p>
+              </li>
+              <li class="milestone" data-anim>
+                <span class="milestone__dot milestone__dot--red"><i class="fa-solid fa-landmark"></i></span>
+                <time datetime="1994-06-23">23/06/1994</time>
+                <p>Quốc hội Việt Nam chính thức phê chuẩn Công ước.</p>
+              </li>
+              <li class="milestone" data-anim>
+                <span class="milestone__dot milestone__dot--gold"><i class="fa-solid fa-earth-asia"></i></span>
+                <time datetime="1994-11-16">16/11/1994</time>
+                <p>Công ước chính thức có hiệu lực trên toàn cầu.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="quote-card glass" data-anim>
+            <i class="fa-solid fa-quote-left quote-card__mark"></i>
+            <div>
+              <h3>“Hiến pháp của đại dương”</h3>
+              <p>Khẳng định <strong>chủ quyền, quyền chủ quyền và quyền tài phán</strong> của quốc gia ven biển theo chuẩn mực quốc tế.</p>
+            </div>
+            <ul class="facts">
+              <li><strong>17</strong><span>Phần</span></li>
+              <li><strong>320</strong><span>Điều</span></li>
+              <li><strong>9</strong><span>Phụ lục</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-earth-asia"></i></span>
+          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=1400&q=80" alt="Sóng biển xanh thẳm" decoding="async">
+          <span class="media__badge"><i class="fa-solid fa-globe"></i>UNCLOS 1982</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Đại dương – Không gian sinh tồn và phát triển</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 10: LUẬT BIỂN VIỆT NAM ========== -->
+    <section class="slide" id="slide-10" data-title="Luật Biển Việt Nam" data-icon="fa-scale-balanced" data-theme="gold" aria-roledescription="slide" aria-label="Slide 10 trên 14: Luật Biển Việt Nam">
+      <span class="slide__index" aria-hidden="true">10</span>
+      <div class="slide__inner grid-2 grid-2--reverse">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-scale-balanced"></i>Phần IV · Pháp lý quốc gia</span>
+            <h2 class="slide__title" data-anim>Luật Biển <span class="hl">Việt Nam</span></h2>
+          </header>
+
+          <div class="law-stats">
+            <div class="stat glass" data-anim>
+              <span class="stat__icon"><i class="fa-solid fa-file-signature"></i></span>
+              <div><span class="stat__label">Thông qua</span><strong class="stat__value">21/06/2012</strong></div>
+            </div>
+            <div class="stat glass" data-anim>
+              <span class="stat__icon stat__icon--gold"><i class="fa-solid fa-calendar-check"></i></span>
+              <div><span class="stat__label">Hiệu lực</span><strong class="stat__value">01/01/2013</strong></div>
+            </div>
+          </div>
+
+          <p class="sub-title" data-anim><i class="fa-solid fa-sitemap"></i>Khung quy định toàn diện</p>
+          <ul class="framework">
+            <li class="fw-item glass spot" data-anim><i class="fa-solid fa-ruler-horizontal"></i>Đường cơ sở</li>
+            <li class="fw-item glass spot" data-anim><i class="fa-solid fa-droplet"></i>Nội thủy</li>
+            <li class="fw-item glass spot" data-anim><i class="fa-solid fa-flag"></i>Lãnh hải</li>
+            <li class="fw-item glass spot" data-anim><i class="fa-solid fa-arrows-left-right"></i>Vùng tiếp giáp lãnh hải</li>
+            <li class="fw-item glass spot" data-anim><i class="fa-solid fa-fish"></i>Vùng đặc quyền kinh tế</li>
+            <li class="fw-item glass spot" data-anim><i class="fa-solid fa-layer-group"></i>Thềm lục địa</li>
+            <li class="fw-item fw-item--gold spot" data-anim><i class="fa-solid fa-star"></i>Hệ thống đảo &amp; quần đảo: <strong>Hoàng Sa, Trường Sa</strong></li>
+          </ul>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-scale-balanced"></i></span>
+          <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1400&q=80" alt="Cán cân công lý tượng trưng cho pháp luật" decoding="async">
+          <span class="media__badge"><i class="fa-solid fa-book"></i>Luật số 18/2012/QH13</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>7 chương · 55 điều – Thượng tôn pháp luật trên biển</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 11: CÁC VÙNG BIỂN ========== -->
+    <section class="slide" id="slide-11" data-title="Các vùng biển theo Luật Biển" data-icon="fa-water" data-theme="blue" aria-roledescription="slide" aria-label="Slide 11 trên 14: Các vùng biển theo Luật Biển">
+      <span class="slide__index" aria-hidden="true">11</span>
+      <div class="slide__inner grid-2 grid-2--sea">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-water"></i>Phần IV · Vùng biển Việt Nam</span>
+            <h2 class="slide__title" data-anim>Các vùng biển <span class="hl">theo Luật Biển</span></h2>
+          </header>
+
+          <ul class="zone-list" id="zone-list">
+            <li data-anim><button class="zl-item" type="button" data-zone="1">
+              <span class="zl-item__num">1</span>
+              <span class="zl-item__body"><strong>Nội thủy</strong><span>Toàn bộ vùng nước bên trong đường cơ sở.</span></span>
+              <span class="zl-item__dist">Trong ĐCS</span>
+            </button></li>
+            <li data-anim><button class="zl-item" type="button" data-zone="2">
+              <span class="zl-item__num">2</span>
+              <span class="zl-item__body"><strong>Lãnh hải</strong><span>Rộng 12 hải lý từ đường cơ sở – chủ quyền hoàn toàn.</span></span>
+              <span class="zl-item__dist">12 hl</span>
+            </button></li>
+            <li data-anim><button class="zl-item" type="button" data-zone="3">
+              <span class="zl-item__num">3</span>
+              <span class="zl-item__body"><strong>Vùng tiếp giáp lãnh hải</strong><span>12 hải lý tiếp theo, nằm ngoài lãnh hải.</span></span>
+              <span class="zl-item__dist">24 hl</span>
+            </button></li>
+            <li data-anim><button class="zl-item" type="button" data-zone="4">
+              <span class="zl-item__num">4</span>
+              <span class="zl-item__body"><strong>Vùng đặc quyền kinh tế</strong><span>Phạm vi 200 hải lý tính từ đường cơ sở.</span></span>
+              <span class="zl-item__dist">200 hl</span>
+            </button></li>
+            <li data-anim><button class="zl-item" type="button" data-zone="5">
+              <span class="zl-item__num">5</span>
+              <span class="zl-item__body"><strong>Thềm lục địa</strong><span>Đáy biển và lòng đất dưới đáy biển kéo dài tự nhiên.</span></span>
+              <span class="zl-item__dist">Đáy biển</span>
+            </button></li>
+          </ul>
+        </div>
+
+        <figure class="media media--info" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-water"></i></span>
+          <img src="https://images.unsplash.com/photo-1439405326854-014607f694d7?auto=format&fit=crop&w=1400&q=80" alt="Mặt biển rộng lớn" decoding="async">
+          <div class="sea-map" id="sea-map" aria-label="Infographic mặt cắt các vùng biển">
+            <div class="sea-map__head">
+              <strong><i class="fa-solid fa-ruler-combined"></i>Mặt cắt các vùng biển</strong>
+              <small>1 hải lý = 1.852 m</small>
+            </div>
+            <div class="sea-map__scale" aria-hidden="true">
+              <span class="mark" style="left:22%">Đường cơ sở</span>
+              <span class="mark" style="left:36%">12</span>
+              <span class="mark" style="left:50%">24</span>
+              <span class="mark mark--end" style="left:100%">200 hl</span>
+            </div>
+            <div class="sea-map__water">
+              <div class="band band--land"><span>Đất liền</span></div>
+              <button class="band band--internal" type="button" data-zone="1" aria-label="Nội thủy"><span>Nội thủy</span></button>
+              <button class="band band--territorial" type="button" data-zone="2" aria-label="Lãnh hải"><span>Lãnh hải</span></button>
+              <button class="band band--contiguous" type="button" data-zone="3" aria-label="Vùng tiếp giáp lãnh hải"><span>Tiếp giáp</span></button>
+              <button class="band band--eez" type="button" data-zone="4" aria-label="Vùng đặc quyền kinh tế"><span>Vùng đặc quyền kinh tế</span><small>EEZ</small></button>
+            </div>
+            <div class="sea-map__bed">
+              <svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="bedGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#8a6a3b"/>
+                    <stop offset="1" stop-color="#3a2a14"/>
+                  </linearGradient>
+                </defs>
+                <path class="bed-path" d="M0,0 H22 C38,2 56,4 70,6 C80,8 84,14 88,26 C91,34 95,37 100,38 V40 H0 Z" fill="url(#bedGrad)"/>
+              </svg>
+              <button class="shelf-label" type="button" data-zone="5"><i class="fa-solid fa-layer-group"></i>Thềm lục địa</button>
+            </div>
+            <p class="sea-map__hint"><i class="fa-solid fa-hand-pointer"></i>Di chuột / chạm vào từng vùng để định vị</p>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 12: TRÁCH NHIỆM CỦA CÔNG DÂN ========== -->
+    <section class="slide" id="slide-12" data-title="Trách nhiệm của mọi công dân" data-icon="fa-people-group" data-theme="red" aria-roledescription="slide" aria-label="Slide 12 trên 14: Trách nhiệm của mọi công dân">
+      <span class="slide__index" aria-hidden="true">12</span>
+      <div class="slide__inner grid-2 grid-2--reverse">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-people-group"></i>Phần V · Trách nhiệm</span>
+            <h2 class="slide__title" data-anim>Trách nhiệm của <span class="hl">mọi công dân</span></h2>
+            <p class="lead" data-anim>Bốn nghĩa vụ nòng cốt trong bảo vệ chủ quyền lãnh thổ, biên giới quốc gia.</p>
+          </header>
+
+          <div class="duties">
+            <article class="duty glass spot" data-anim>
+              <span class="duty__num">01</span>
+              <span class="duty__icon"><i class="fa-solid fa-book-open"></i></span>
+              <p>Tự giác <strong>học tập, quán triệt</strong> và tuân thủ pháp luật biên giới.</p>
+            </article>
+            <article class="duty glass spot" data-anim>
+              <span class="duty__num">02</span>
+              <span class="duty__icon duty__icon--gold"><i class="fa-solid fa-heart"></i></span>
+              <p>Nâng cao <strong>lòng yêu nước</strong>, ý thức cảnh giác cách mạng.</p>
+            </article>
+            <article class="duty glass spot" data-anim>
+              <span class="duty__num">03</span>
+              <span class="duty__icon duty__icon--blue"><i class="fa-solid fa-bullhorn"></i></span>
+              <p>Tích cực <strong>tuyên truyền, vận động</strong> cộng đồng chấp hành pháp luật.</p>
+            </article>
+            <article class="duty glass spot" data-anim>
+              <span class="duty__num">04</span>
+              <span class="duty__icon"><i class="fa-solid fa-phone-volume"></i></span>
+              <p><strong>Kịp thời báo</strong> cho cơ quan chức năng khi phát hiện vi phạm.</p>
+            </article>
+          </div>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-people-group"></i></span>
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=80" alt="Cộng đồng đoàn kết, gắn bó" decoding="async">
+          <span class="media__badge"><i class="fa-solid fa-hand-fist"></i>Toàn dân bảo vệ biên giới</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Đoàn kết – Sức mạnh vô địch của toàn dân tộc</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 13: TRÁCH NHIỆM CỦA HỌC SINH ========== -->
+    <section class="slide" id="slide-13" data-title="Trách nhiệm của học sinh" data-icon="fa-graduation-cap" data-theme="gold" aria-roledescription="slide" aria-label="Slide 13 trên 14: Trách nhiệm của học sinh">
+      <span class="slide__index" aria-hidden="true">13</span>
+      <div class="slide__inner grid-2">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-graduation-cap"></i>Phần V · Thế hệ trẻ</span>
+            <h2 class="slide__title" data-anim>Trách nhiệm của <span class="hl">học sinh</span></h2>
+          </header>
+
+          <ol class="steps">
+            <li class="step glass spot" data-anim>
+              <span class="step__icon"><i class="fa-solid fa-graduation-cap"></i></span>
+              <p><strong>Học tập chăm chỉ</strong>, nâng cao hiểu biết pháp luật &amp; chủ quyền.</p>
+            </li>
+            <li class="step glass spot" data-anim>
+              <span class="step__icon step__icon--red"><i class="fa-solid fa-hand"></i></span>
+              <p><strong>Nói không</strong> với mọi hành vi xâm hại an ninh, trật tự biên giới.</p>
+            </li>
+            <li class="step glass spot" data-anim>
+              <span class="step__icon step__icon--blue"><i class="fa-solid fa-share-nodes"></i></span>
+              <p><strong>Lan tỏa thông tin chính thống</strong> về biển đảo, biên cương đất nước.</p>
+            </li>
+            <li class="step glass spot" data-anim>
+              <span class="step__icon"><i class="fa-solid fa-user-shield"></i></span>
+              <p><strong>Tố giác kịp thời</strong> vi phạm tới thầy cô, nhà trường và chính quyền địa phương.</p>
+            </li>
+          </ol>
+
+          <p class="pledge" data-anim><i class="fa-solid fa-heart"></i>Tuổi trẻ học đường – Hướng về biển đảo, biên cương Tổ quốc</p>
+        </div>
+
+        <figure class="media" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1400&q=80" alt="Học sinh, sinh viên trong ngày tốt nghiệp" decoding="async">
+          <span class="media__badge"><i class="fa-solid fa-star"></i>Thế hệ tiếp nối</span>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Thế hệ trẻ – Tiếp nối truyền thống dựng nước và giữ nước</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SLIDE 14: TỔNG KẾT & THÔNG ĐIỆP ========== -->
+    <section class="slide slide--finale" id="slide-14" data-title="Tổng kết & Thông điệp" data-icon="fa-flag-checkered" data-theme="gold" data-enter="burst" aria-roledescription="slide" aria-label="Slide 14 trên 14: Tổng kết và thông điệp">
+      <span class="slide__index" aria-hidden="true">14</span>
+      <div class="slide__inner grid-2">
+        <div class="slide__content">
+          <header class="slide__head">
+            <span class="eyebrow" data-anim><i class="fa-solid fa-flag-checkered"></i>Tổng kết &amp; Thông điệp</span>
+          </header>
+
+          <blockquote class="manifesto" data-anim>
+            <span class="burst" aria-hidden="true"></span>
+            <i class="fa-solid fa-quote-left manifesto__mark"></i>
+            <p>Bảo vệ chủ quyền lãnh thổ, biên giới quốc gia là <span class="text-gradient">trách nhiệm thiêng liêng</span> của toàn Đảng, toàn dân và toàn quân.</p>
+          </blockquote>
+
+          <ul class="pillars">
+            <li class="pillar glass spot" data-anim><i class="fa-solid fa-lightbulb"></i><span>Nhận thức đúng</span></li>
+            <li class="pillar glass spot" data-anim><i class="fa-solid fa-hand-holding-heart"></i><span>Hành động đẹp</span></li>
+            <li class="pillar pillar--gold spot" data-anim><i class="fa-solid fa-people-group"></i><span>Chung tay giữ vững giang sơn gấm vóc</span></li>
+          </ul>
+
+          <div class="finale__actions" data-anim>
+            <button class="btn btn--primary" id="btn-restart" type="button"><i class="fa-solid fa-rotate-left"></i><span>Xem lại từ đầu</span></button>
+            <p class="sources"><i class="fa-solid fa-book-bookmark"></i>Căn cứ: Luật Biên giới quốc gia 2003 · Luật Biển Việt Nam 2012 · UNCLOS 1982</p>
+          </div>
+        </div>
+
+        <figure class="media media--hero" data-anim="media">
+          <span class="media__art" aria-hidden="true"><i class="fa-solid fa-flag"></i></span>
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80" alt="Bờ biển xanh trong, bình yên" decoding="async">
+          <div class="flag-card glass">
+            <span class="flag-wrap">
+              <svg class="flag" viewBox="0 0 30 20" aria-hidden="true">
+                <rect width="30" height="20" fill="#DA251D"/>
+                <path d="M15,4 L16.347,8.146 L20.706,8.146 L17.18,10.708 L18.527,14.854 L15,12.292 L11.473,14.854 L12.82,10.708 L9.294,8.146 L13.653,8.146 Z" fill="#FFCD02"/>
+              </svg>
+            </span>
+            <span class="flag-card__text"><strong>Hoàng Sa · Trường Sa</strong><small>là của Việt Nam</small></span>
+          </div>
+          <figcaption class="media__caption"><i class="fa-solid fa-location-dot"></i>Chung tay giữ vững giang sơn gấm vóc</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= ĐIỀU HƯỚNG ================= -->
+  <nav class="controls" aria-label="Chọn slide">
+    <div class="dots" id="pagination-dots"></div>
+  </nav>
+
+  <div class="nav-buttons">
+    <button class="nav-btn nav-btn--prev" id="btn-prev" type="button" aria-label="Slide trước (phím ←)" title="Slide trước (←)">
+      <i class="fa-solid fa-arrow-left"></i>
+    </button>
+    <button class="nav-btn nav-btn--next" id="btn-next" type="button" aria-label="Slide tiếp theo (phím →)" title="Slide tiếp theo (→ / Space)">
+      <span>Tiếp theo</span><i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
+
+  <div class="kbd-hint" aria-hidden="true">
+    <kbd>←</kbd><kbd>→</kbd><span>Chuyển slide</span>
+    <kbd>F</kbd><span>Toàn màn hình</span>
+    <kbd>O</kbd><span>Mục lục</span>
+  </div>
+
+  <!-- ================= MỤC LỤC (OVERVIEW) ================= -->
+  <div class="overview" id="overview" role="dialog" aria-modal="true" aria-labelledby="overview-title" aria-hidden="true">
+    <div class="overview__panel">
+      <div class="overview__head">
+        <h2 id="overview-title"><i class="fa-solid fa-table-cells-large"></i>Mục lục bài giảng</h2>
+        <button class="icon-btn" id="btn-overview-close" type="button" aria-label="Đóng mục lục (Esc)"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="overview__grid" id="overview-grid"></div>
+    </div>
+  </div>
+
+  <div class="sr-only" id="live-region" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
